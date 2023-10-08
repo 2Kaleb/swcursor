@@ -121,7 +121,7 @@ tick(GtkWidget *widget, GdkFrameClock *frame_clock, gpointer user_data)
 	int move_x, move_y;
 	unsigned int mask;
 	gint scale_factor;
-	gboolean mouse_down;
+	/*gboolean mouse_down;*/
   int w_width, w_height;
 
   State_t *state = (State_t*)user_data;
@@ -145,13 +145,13 @@ tick(GtkWidget *widget, GdkFrameClock *frame_clock, gpointer user_data)
       move_x = root_x / scale_factor - w_height / 2;
       move_y = root_y / scale_factor - w_width / 2;
 
-      gtk_window_move(GTK_WINDOW (widget), move_x, move_y);
+     gtk_window_move(GTK_WINDOW (widget), move_x, move_y);
 
-      mouse_down = (mask & Button1Mask) ||
+      /*mouse_down = (mask & Button1Mask) ||
                    (mask & Button2Mask) ||
                    (mask & Button3Mask);
 
-      swcursor_window_set_mouse_down(SWCURSOR_WINDOW (widget), mouse_down);
+      swcursor_window_set_mouse_down(SWCURSOR_WINDOW (widget), mouse_down);*/
     } else {
       if (show_warning) {
         fprintf(stderr, "swcursor: warning: could not get cursor position from Xserver (further warnings will be suppressed)");

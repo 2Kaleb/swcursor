@@ -161,7 +161,7 @@ cairo_surface_t *swcursor_window_get_image(SWCursorWindow *window)
 {
 	return window->image;
 }
-
+/*
 void
 swcursor_window_set_mouse_down(SWCursorWindow *window, gboolean mouse_down)
 {
@@ -174,4 +174,4 @@ swcursor_window_set_mouse_down(SWCursorWindow *window, gboolean mouse_down)
 gboolean swcursor_window_get_mouse_down(SWCursorWindow *window)
 {
 	return window->mouse_down;
-}
+}*/
