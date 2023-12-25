@@ -33,7 +33,7 @@ Usage: ./swcursor [-ir] [file...]
 set the refresh rate per seconds
 
 Example:
-/home/kdebre/swcursor/swcursor -i /home/kdebre/swcursor/cursors/ping.png -r 144
+/home/kdebre/swcursor/swcursor -i /home/kdebre/swcursor/cursors/pink.png -r 144
 ```
 
 ```
